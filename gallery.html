@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Sawai Madhopur Vlog</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📸 Photo & Video Gallery</h1>
+    <p>From the heart of Rajasthan: Temples, Safaris & Local Vibes</p>
+    <p><a href="index.html" style="color: #ccc;">← Back to Home</a></p>
+  </header>
+
+  <section class="filter-buttons">
+    <button onclick="filterGallery('all')">All</button>
+    <button onclick="filterGallery('temple')">Temple</button>
+    <button onclick="filterGallery('safari')">Safari</button>
+    <button onclick="filterGallery('food')">Food</button>
+  </section>
+
+  <section class="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="photo-grid">
+      <img src="images/photo1.jpg" alt="Temple View" class="temple">
+      <img src="images/photo2.jpg" alt="Safari Shot" class="safari">
+      <img src="images/photo3.jpg" alt="Local Food" class="food">
+    </div>
+  </section>
+
+  <section class="video-gallery">
+    <h2>Our Vlog Playlist</h2>
+    <div class="video-grid">
+      <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=sawaimadhopurvlog" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <div id="lightbox" class="lightbox">
+    <span onclick="closeLightbox()">×</span>
+    <img id="lightbox-img" src="" alt="Enlarged">
+  </div>
+
+  <footer>
+    <p>© 2025 Sawai Madhopur Vlog. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
